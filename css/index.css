@@ -1,0 +1,27 @@
+@font-face{
+    font-family: katahdin;
+    src: url("../fonts/katahdin-round.regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+#lead-name{
+    color: white;
+    text-shadow: none;
+    font-family: katahdin;
+    font-size: 4em;
+}
+
+#mission{
+    color: #374785;
+    padding: 5%;
+}
+
+#content{
+    background-color: white;
+}
+
+#join_us{
+    color: #374785;
+    /* padding: 5%; */
+}
