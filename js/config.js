@@ -1,1 +1,1 @@
-const baseURL = "bleh.com";
+const baseURL = "config.com";
