@@ -8,12 +8,19 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/stories.css">
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+
 
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -21,46 +28,48 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-    <script src = "./js/config.js"></script>
-    <script src = "./js/stories.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/stories.js"></script>
 
 </head>
 
 <body>
+    <!-- Color Strip -->
+    <div class="topstrip">
+
+    </div>
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="./index.html">Draw4Med</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="./our_work.html">Our Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./submissions.html">Submissions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./stories.html">Stories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./involve.html">Get Involved</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact Us</a>
-                </li>
-            </ul>
+    <nav class="navigation dark">
+        <div class="nav-left">
+            <a href="./index.html">
+                <img width=100 height=100 src="./assets/dm42.png">
+            </a>
+        </div>
+        <div class="nav-right">
+            <div>
+                <a href="./our_work.html">Our Work</a>
+            </div>
+            <div>
+                <a href="./events.html">Events</a>
+            </div>
+            <div>
+                <a href="./submissions.html">Submissions</a>
+            </div>
+            <div>
+                <a href="./stories.html">Stories</a>
+            </div>
+            <div>
+                <a href="./involve.html">Get Involved</a>
+            </div>
+            <div>
+                <a href="./contact.html">Contact Us</a>
+            </div>
         </div>
     </nav>
     <!-- End Navbar -->
 
     <!-- Content -->
-    <div class="content">
+    <div id="content">
         <!-- Intro -->
         <div id="stories_msg" class="container center-text">
             <h2>Stories</h2>
@@ -74,32 +83,34 @@
         <!-- End Intro -->
 
         <!-- Stories -->
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col mb-4">
-                <div class="card h-100" data-toggle="modal" data-target="#storyModal">
-                    <div class = "imgHolder">
-                        <img src="./assets/crop.jpg" class="card-img-top" alt="...">
+        <div id="stories">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card h-100" data-toggle="modal" data-target="#storyModal">
+                        <div class="imgHolder">
+                            <img src="./assets/crop.jpg" class="card-img-top" alt="...">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card h-100" data-toggle="modal" data-target="#storyModal">
-                    <div class = "imgHolder">
-                        <img src="./assets/crop.jpg" class="card-img-top" alt="...">
+                <div class="col mb-4">
+                    <div class="card h-100" data-toggle="modal" data-target="#storyModal">
+                        <div class="imgHolder">
+                            <img src="./assets/crop.jpg" class="card-img-top" alt="...">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card h-100" data-toggle="modal" data-target="#storyModal">
-                    <div class = "imgHolder">
-                        <img src="./assets/crop.jpg" class="card-img-top" alt="...">
+                <div class="col mb-4">
+                    <div class="card h-100" data-toggle="modal" data-target="#storyModal">
+                        <div class="imgHolder">
+                            <img src="./assets/crop.jpg" class="card-img-top" alt="...">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card h-100" data-toggle="modal" data-target="#storyModal">
-                    <div class = "imgHolder">
-                        <img src="./assets/crop.jpg" class="card-img-top" alt="...">
+                <div class="col mb-4">
+                    <div class="card h-100" data-toggle="modal" data-target="#storyModal">
+                        <div class="imgHolder">
+                            <img src="./assets/crop.jpg" class="card-img-top" alt="...">
+                        </div>
                     </div>
                 </div>
             </div>

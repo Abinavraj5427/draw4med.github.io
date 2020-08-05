@@ -1,0 +1,27 @@
+@font-face{
+    font-family: katahdin;
+    src: url("../fonts/katahdin-round.regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: FuturaSTD;
+    src: url('../fonts/FuturaStdBook.woff') format('woff');
+}
+
+#lead-name{
+    color: white;
+    text-shadow: none;
+    font-family: katahdin;
+    font-size: 4em;
+}
+
+#content{
+    background-color: white;
+}
+
+#our_work p{
+    font-size: 1.5em;
+    color: #374785
+}

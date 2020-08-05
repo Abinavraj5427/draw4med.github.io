@@ -1,7 +1,7 @@
 // const baseURL = "";
 $( document ).ready(function() {
 
-    var url = baseURL + "?action=read";
+    var url = baseURL + "?action=read&sheetname=Stories";
     //reads  data
     var request = jQuery.ajax({
         crossDomain: true,
