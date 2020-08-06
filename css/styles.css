@@ -23,7 +23,7 @@
 }
 
 .dark{
-    background-color: #424242!important;
+    background-color: #374785!important;
 }
 
 .nav-left{
@@ -170,21 +170,20 @@ body {
 }
 
 .imgholder{
-    position: relative;
-    overflow: hidden;
     height: 400;
-    width: 400;
+    overflow: hidden;
+    background-color: #030326;
+}
+
+.imgholder img{
+    top: 0; 
+    left: 0;
 }
 
 .card:hover {
     box-shadow: 0 32px 64px 0 rgba(214, 15, 15, 0.4);
 }
 
-.imgholder img{
-    position: absolute;
-    top: 0; 
-    left: 0;
-}
 
 
 .box-buttons{
@@ -198,31 +197,6 @@ body {
     justify-content: space-around; */
 }
 
-#contacts-ctr{
-    height: 30vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contacts{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.contact-label{
-    border-color: red;
-    border-style: solid;
-    padding: 3px;
-    border-radius: 10%;
-}
-
-#contact{
-    text-align:center;
-}
 
 .involve-btn{
     /* border-radius: 5%; */
@@ -258,7 +232,3 @@ h2{
     font-size: 3em;
 }
 
-
-/* @media only screen and (max-width: 480px){
-    
-} */
