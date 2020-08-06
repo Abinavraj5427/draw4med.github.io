@@ -170,7 +170,7 @@ body {
 }
 
 .imgholder{
-    height: 400;
+    height: auto;
     overflow: hidden;
     background-color: #030326;
 }
