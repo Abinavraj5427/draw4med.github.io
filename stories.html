@@ -42,7 +42,8 @@
     <nav class="navigation dark">
         <div class="nav-left">
             <a href="./index.html">
-                <img width=100 height=100 src="./assets/dm42.png">
+                <!-- <img width=100 height=100 src="./assets/dm42.png"> -->
+                <h4>Draw4Med</h4>
             </a>
         </div>
         <div class="nav-right">
@@ -75,43 +76,42 @@
             <h2>Stories</h2>
             <br />
             <p id="submit_msg">
-                Welcome to the Draw 4 Med Stories Community, where every child’s medical narrative is shown with
-                artistry, admiration, and inspiration. Our youth community deserves a dynamic space to share and
-                appreciate one another’s stories, learning the
+                “Welcome to the Draw4Med Stories Community, a dynamic space where every child’s medical narrative is
+                shown with artistry, admiration, and inspiration. Check some of the most recent stories below!”
             </p>
         </div>
         <!-- End Intro -->
 
         <!-- Stories -->
         <div id="stories">
-            <div id = "stories-row" class="card-columns">
+            <div id="stories-row" class="card-columns">
                 <!-- <div class="col mb-4"> -->
-                    <div class="card" data-toggle="modal" data-target="#storyModal">
-                        <div class="imgHolder">
-                            <img src="./assets/crop.jpg" class="card-img-top" alt="...">
-                        </div>
+                <div class="card" data-toggle="modal" data-target="#storyModal">
+                    <div class="imgHolder">
+                        <img src="./assets/crop.jpg" class="card-img-top" alt="...">
                     </div>
+                </div>
                 <!-- </div>
                 <div class="col mb-4"> -->
-                    <div class="card" data-toggle="modal" data-target="#storyModal">
-                        <div class="imgHolder">
-                            <img src="./assets/crop.jpg" class="card-img-top" alt="...">
-                        </div>
+                <div class="card" data-toggle="modal" data-target="#storyModal">
+                    <div class="imgHolder">
+                        <img src="./assets/crop.jpg" class="card-img-top" alt="...">
                     </div>
+                </div>
                 <!-- </div>
                 <div class="col mb-4"> -->
-                    <div class="card" data-toggle="modal" data-target="#storyModal">
-                        <div class="imgHolder">
-                            <img src="./assets/crop.jpg" class="card-img-top" alt="...">
-                        </div>
+                <div class="card" data-toggle="modal" data-target="#storyModal">
+                    <div class="imgHolder">
+                        <img src="./assets/crop.jpg" class="card-img-top" alt="...">
                     </div>
+                </div>
                 <!-- </div>
                 <div class="col mb-4"> -->
-                    <div class="card" data-toggle="modal" data-target="#storyModal">
-                        <div class="imgHolder">
-                            <img src="./assets/crop.jpg" class="card-img-top" alt="...">
-                        </div>
+                <div class="card" data-toggle="modal" data-target="#storyModal">
+                    <div class="imgHolder">
+                        <img src="./assets/crop.jpg" class="card-img-top" alt="...">
                     </div>
+                </div>
                 <!-- </div> -->
             </div>
         </div>
@@ -130,12 +130,14 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div id = "modal-body" class="modal-body">
-                    <p>This is text</p>
+                <div id="modal-body" class="modal-body">
+                    <img class="img-responsive" style="max-width:400px;" id="modal-art">
+                    <br />
+                    <p id="modal-artist">Artist</p>
+                    <p id="modal-text">This is text</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>

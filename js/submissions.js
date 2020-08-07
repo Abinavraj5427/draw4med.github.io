@@ -41,5 +41,5 @@ function submitForm(){
     }
 
     var msg = document.getElementById('submit_msg');
-    msg.innerHTML = "Thank you so much for choosing to join our community and submitting your artwork. Our purpose is to create a connection between children and their medically-related sources, and your submission is doing just that. Check out our social media pages over the next few weeks to see your art masterpiece."
+    msg.innerHTML = "Thank you so much for choosing to join the Draw4Med community and submitting your artwork! We will get back to you shortly on your submission result. Don’t forget to follow us on Instagram @draw4med! "
 }

@@ -11,12 +11,17 @@
 }
 
 #lead-name{
-    color: white;
+    color: #374785;
     text-shadow: none;
     font-family: katahdin;
     font-size: 4em;
 }
 
+
+.navigation a:link, .navigation a:visited, .navigation a:active{
+    color: #374785;
+    text-decoration: none;
+}
 #content{
     background-color: white;
 }

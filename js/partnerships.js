@@ -2,11 +2,11 @@
 var records = [];
 $(document).ready(function () {
 
-    var root = document.getElementById("events-row");
+    var root = document.getElementById("partner-row");
     while (root.firstChild) {
         root.removeChild(root.lastChild);
     }
-    var url = baseURL + "?action=read&sheetname=Events";
+    var url = baseURL + "?action=read&sheetname=Partners";
     //reads  data
     var request = jQuery.ajax({
         crossDomain: true,
@@ -15,7 +15,7 @@ $(document).ready(function () {
         dataType: "json",
         success: function (data) {
 
-            // console.log(data);
+            console.log(data);
             records = data.records;
             for(let i = 0; i< data.records.length; i++){
                 var element = data.records[i];
@@ -28,15 +28,11 @@ $(document).ready(function () {
                 let cardbody = document.createElement("div");
                 cardbody.className = "card-body";
                 let h5 = document.createElement("h5");
-                h5.innerHTML = element.Event;
+                h5.innerHTML = element.Partner;
                 h5.className = "card-title";
-                let p = document.createElement("p");
-                p.className = "card-text";
-                p.innerHTML = element.Description;
                 cardbody.appendChild(h5);
-                cardbody.appendChild(p);
 
-                storage.ref().child('events/' + element.Image).getDownloadURL().then(function (url) {
+                storage.ref().child('partners/' + element.Image).getDownloadURL().then(function (url) {
 
                     let img = document.createElement("img");
                     img.src = url;
